@@ -59,6 +59,12 @@
 
 遊戲地圖大小為 40 × 20。蛇身使用 `deque` 儲存，移動時將新的蛇頭加入前端，再移除尾端；吃到食物時則保留尾端，使蛇身增加一格。畫面會先儲存在 `vector<string>` 中，再輸出到主控台，以減少重複輸出造成的畫面閃爍。
 
+## UML 類別圖
+
+下圖呈現程式中 `Direction`、`Point`、`Snake`、`Food` 與 `Game` 之間的結構及關係。
+
+![貪食蛇遊戲 UML 類別圖](docs/uml-class-diagram.png)
+
 ## 安裝與執行
 
 ### 系統需求
@@ -98,7 +104,15 @@ x64\Debug\ssss.exe
 
 ## 運行畫面
 
+### 遊戲進行畫面
+
 ![貪食蛇小遊戲運行畫面](docs/gameplay.png)
+
+### 遊戲結束畫面
+
+遊戲結束後會顯示最終分數，玩家可按下 `R` 重新開始，或按下 `Q` 離開遊戲。
+
+![貪食蛇小遊戲結束畫面](docs/game-over.png)
 
 ## 分工資訊
 
@@ -113,7 +127,9 @@ x64\Debug\ssss.exe
 ```text
 ssss/
 ├── docs/
-│   └── gameplay.png
+│   ├── game-over.png
+│   ├── gameplay.png
+│   └── uml-class-diagram.png
 ├── ssss/
 │   ├── main.cpp
 │   ├── SnakeGame.cpp
