@@ -59,11 +59,6 @@
 
 遊戲地圖大小為 40 × 20。蛇身使用 `deque` 儲存，移動時將新的蛇頭加入前端，再移除尾端；吃到食物時則保留尾端，使蛇身增加一格。畫面會先儲存在 `vector<string>` 中，再輸出到主控台，以減少重複輸出造成的畫面閃爍。
 
-## UML 類別圖
-
-下圖呈現程式中 `Direction`、`Point`、`Snake`、`Food` 與 `Game` 之間的結構及關係。
-
-![貪食蛇遊戲 UML 類別圖](docs/uml-class-diagram.png)
 
 ## 安裝與執行
 
@@ -138,3 +133,6 @@ ssss/
 ├── README.md
 └── ssss.sln
 ```
+## UML 類別圖
+
+![貪食蛇遊戲 UML 類別圖](docs/uml-class-diagram.png)
